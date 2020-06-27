@@ -88,7 +88,7 @@ def add_magnet(aria_instance, magnetic_link, c_file_name):
 
 def add_torrent(aria_instance, torrent_file_path):
     if torrent_file_path is None:
-        return False, "**FAILED** \n" + " \nsomething wrongings when trying to add <u>TORRENT</u> file"
+        return False, "**FAILED** \nSomething wrongings when trying to add <u>TORRENT</u> file"
     if os.path.exists(torrent_file_path):
         # Add Torrent Into Queue
         try:
@@ -103,7 +103,7 @@ def add_torrent(aria_instance, torrent_file_path):
         else:
             return True, "" + download.gid + ""
     else:
-        return False, "**FAILED** \n" + " \nPlease try other sources to get workable link"
+        return False, "**FAILED** \nPlease try other sources to get workable link"
 
 
 def add_url(aria_instance, text_url, c_file_name):
